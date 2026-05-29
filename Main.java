@@ -18,7 +18,7 @@ public class Main {
 
         int[] stats = new int[8]; // Assuming there are 8 stats to distribute
         
-        for (int i = 0; i <totalStats; i++){
+        for (int i = 0; i < totalStats; i++){ // Loop through the total stat points and randomly distribute them among the stats 
             stats[randStat.nextInt(stats.length)]++; // Randomly distribute stat points
         }
         System.out.println("Your stats are:");
@@ -30,6 +30,9 @@ public class Main {
         System.out.println("Intelligence: " + stats[5]);
         System.out.println("Faith: " + stats[6]);
         System.out.println("Arcane: " + stats[7]);
+
+        // Action Phase 
+        // Writing conditions to account for the player's class and stats, and then determining the outcome of an action based on those conditions. The program uses if-else statements to check the player's class and stats, and then it prints out the result of the action.
         
 
 
